@@ -1,0 +1,421 @@
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(fonts/roboto-font/RobotoRegular-3m4L.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Italic;
+    src: url(fonts/roboto-font/RobotoLightItalic-E9nn.ttf);
+}
+
+body{
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: Roboto-Regular;
+}
+
+.paragraphContainer{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.paragraphs{
+    font-family: Roboto-Italic;
+}
+
+.headerMaster{
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    z-index: 1;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 12px;
+}
+
+.headerBlockLeft{
+    margin-left: 20px;
+}
+
+.headerBlockLeft a{
+    color: white;
+    text-decoration: none;
+}
+
+.headerBlockLeft img{
+    height: 13px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.headerBlockRight{
+    margin-right: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.headerBlockRight img{
+    height: 14px;
+}
+
+.headerBlockRight img:hover{
+    cursor: pointer;
+}
+
+.menuDropdownMaster{
+    background-color: lightgray;
+    padding: 2px;
+    border-radius: 2px;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    align-items: center;
+    font-size: 12px;
+}
+
+.menuDropdownMaster a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.menuDropdownMaster a:hover{
+    color: black;
+}
+
+.headerBlockRight:hover .menuDropdownMaster {
+    display: block;
+}
+
+.headerBlockCenter{
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+}
+
+.headerBlockCenter a{
+    color: white;
+    text-decoration: none;
+}
+
+.homeImageTextMaster{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homeBackgroundImg{
+    width: 100%;
+    height: auto;
+}
+
+.homeWelcomeDiv{
+    top: 35%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homeWelcomeDivSmall{
+    font-family: Roboto-Italic;
+    margin: 0;
+}
+
+.homeWelcomeDivLarge{
+    margin: 0;
+    margin-top: 20px;
+}
+
+.Photos{
+    grid-area: Photos;
+}
+
+.ThreeD{
+    grid-area: ThreeD;
+}
+
+.Music{
+    grid-area: Music;
+}
+
+.homeSkillBubbleMaster{
+    display: grid;
+    grid-template-areas: 
+    'Photos Music'
+    'Photos ThreeD';
+    width: 60%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 700px) {
+    .homeSkillBubbleMaster {
+        width: 100%;
+    }
+}
+
+.homeSkillBubbleIndividual{
+    color: white;
+    text-decoration: none;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    margin: auto;
+    opacity: 0.8;
+    transition: all 1s;
+}
+
+.homeSkillBubbleIndividual:hover{
+    opacity: 1;
+}
+
+.homeSkillBubbleIndividual img{
+    width: 100%;
+    border-radius: 2px;
+    position: relative;
+}
+
+.homeSkillBubbleIndividual h2{
+    font-family: Roboto-Italic;
+    font-size: 16px;
+    margin-top: 50px;
+    position: absolute;
+}
+
+.footerMaster{
+    width: 100%;
+    height: 300px;
+    background-color: black;
+}
+
+/*Begin Photo Page*/
+
+.photoPageContents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pageTitle{
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+.pageTitleSubText{
+    font-family: Roboto-Italic;
+    font-size: 12px;
+}
+
+/*Photo gallery 1 begin*/
+
+
+.imageGalleryTitle{
+    background-color: black;
+    margin-bottom: 5px;
+    margin-top: 50px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto-Italic;
+}
+
+.imageGalleryDivider{
+    display: flex;
+    flex-direction: row;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-gap: 10px;
+    width: 100%;
+}
+
+.imageGalleryLargeImgMaster{
+    grid-column: 1 / span 1;
+    position: relative;
+}
+
+.imageGalleryContainer {
+    position: relative;
+    margin-top: 30px;
+    width: 80%;
+}
+
+
+#picture-Box-ThreeDVideos,
+#picture-Box-ThreeDImages,
+#picture-Box-planets,
+#picture-Box-yellowstone,
+#picture-Box {
+    width: 100%;
+    position: initial;
+}
+
+.numbertext {
+    color: white;
+    font-size: 8px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.caption-container {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    font-size: 12px;
+    margin-top: -20px;
+    margin-bottom: 0px;
+    z-index: 0;
+    padding-bottom: 6px;
+    font-family: Roboto-Italic;
+}
+
+.caption-container:hover{
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.caption-container p {
+    color: white;
+    width: 50%;
+    margin: auto;
+    transition: color 0.15s;
+}
+
+.caption-container p:hover{
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.image-download-icon{
+    top: 5px;
+    right: 5px;
+    position: absolute;
+    margin-top: 0px;
+    z-index: 1;
+}
+
+.image-download-icon img {
+    width: 30px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 1s;
+}
+
+.image-download-icon img:hover {
+    opacity: 1;
+}
+
+.row {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.photoGallerySmallImgMaster {
+    width: 49%;
+    margin: auto;
+}
+
+
+.photoGallerySmallImgMaster img{
+    width: 100%;
+}
+
+.photoGallerySmallImg {
+    opacity: 0.6;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.active,
+.photoGallerySmallImg:hover {
+    opacity: 0.8;
+    border-radius: 4px;
+}
+
+.rowThreeD{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.photoGallerySmallImgThreeDMaster{
+    width: 33%;
+    margin: auto;
+}
+
+.photoGallerySmallImgThreeDMaster img{
+    width: 100%;
+}
+
+.rowVideo{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.photoGallerySmallVideoMaster{
+    width: 100%;
+    margin: auto;
+}
+
+.photoGallerySmallVideoMaster video {
+    width: 48%;
+}
+
+/*Photo gallery 1 end*/
+
+/*Begin Music CSS*/
+
+.AudioMaster{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.AudioPoster{
+    width: 40%;
+}
+
+.AudioBlock{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: background-color 1s;
+}
+
+.AudioBlock p{
+    font-size: 12px;
+    margin: auto;
+    margin-left: 0;
+    width: 40%;
+}
+
+.AudioBlock:hover{
+    background-color: rgba(100, 100, 100, 0.5);
+    cursor: pointer;
+}
+
+.Audio{
+    border-radius: 10px;
+    margin: auto;
+    width: 100%;
+}
+
+/*End Music CSS*/
