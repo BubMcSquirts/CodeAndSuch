@@ -15,6 +15,7 @@ class Header extends HTMLElement {
         <a href="3D.html">3D</a>
         <a href="music.html">Music</a>
       </div>
+      <a class="headerBlockRightAbout" href="about.html">About</a>
       <div class="headerBlockRight">
         <img src="images/Icons/Menu_Logo_Icon.png" />
         <div class="menuDropdownMaster">
