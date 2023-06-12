@@ -85,6 +85,7 @@ body{
     color: white;
     text-decoration: none;
     display: block;
+    position: relative;
 }
 
 .menuDropdownMaster a:hover{
@@ -142,23 +143,10 @@ body{
     margin-top: 20px;
 }
 
-.Photos{
-    grid-area: Photos;
-}
-
-.ThreeD{
-    grid-area: ThreeD;
-}
-
-.Music{
-    grid-area: Music;
-}
-
 .homeSkillBubbleMaster{
-    display: grid;
-    grid-template-areas: 
-    'Photos Music'
-    'Photos ThreeD';
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 60%;
     margin: auto;
 }
@@ -172,14 +160,14 @@ body{
 .homeSkillBubbleIndividual{
     color: white;
     text-decoration: none;
-    width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px;
     margin: auto;
     opacity: 0.8;
     transition: all 1s;
+    padding: 5px;
+    width: 45%;
 }
 
 .homeSkillBubbleIndividual:hover{
@@ -188,20 +176,20 @@ body{
 
 .homeSkillBubbleIndividual img{
     width: 100%;
-    border-radius: 2px;
+    border-radius: 20px;
     position: relative;
 }
 
 .homeSkillBubbleIndividual h2{
     font-family: Roboto-Italic;
-    font-size: 16px;
-    margin-top: 50px;
+    font-size: 18px;
+    margin-top: 12%;
     position: absolute;
 }
 
 .footerMaster{
     width: 100%;
-    height: 300px;
+    height: 500px;
     background-color: black;
 }
 
