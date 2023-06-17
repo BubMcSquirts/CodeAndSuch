@@ -8,6 +8,14 @@ function myImageFunctionYellowStone(productSmallImg) {
 
 /*Begin 3D JS*/
 
+function myImageFunctionNebulae(productSmallImg) {
+  var productFullImg = document.getElementById("picture-Box-nebulae");
+  productFullImg.src = productSmallImg.src;
+
+  let imageCaption = document.getElementById("caption-Nebulae");
+  imageCaption.innerHTML = productSmallImg.name;
+}
+
 function myImageFunctionPlanets(productSmallImg) {
   var productFullImg = document.getElementById("picture-Box-planets");
   productFullImg.src = productSmallImg.src;
