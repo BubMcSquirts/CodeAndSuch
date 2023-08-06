@@ -423,3 +423,68 @@ body{
 }
 
 /*End Music CSS*/
+
+/*Begin Film CSS*/
+
+.filmTitleContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.filmTitle{
+    font-size: 24px;
+}
+
+.filmVideoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+@media only screen and (min-width: 0px) {
+    .filmVideo{
+        width: 1120px;
+        height: 630px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .filmVideo{
+        width: 560px;
+        height: 315px;
+    }
+}
+
+
+.filmsLinkContainer{
+    background-color: blue;
+    margin-top: 20%;
+    font-size: 24px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    transition: all, 0.3s;
+}
+
+.filmsLinkContainer:hover {
+    background-color: purple;
+    margin-top: 20%;
+    font-size: 26px;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.filmsLink{
+    text-decoration: none;
+    color: white;
+}
+/*End Film CSS*/

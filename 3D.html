@@ -21,6 +21,11 @@
     <div class="homeImageTextMaster">
       <div class="homeWelcomeDiv">
         <h1 class="homeWelcomeDivSmall">3D</h1>
+        <div class="filmsLinkContainer">
+          <a class="filmsLink" href="film.html"
+            >See especially Bub's new 3D film: Nebula Heist ></a
+          >
+        </div>
       </div>
       <img
         class="homeBackgroundImg"
@@ -224,15 +229,24 @@
           <div class="imageGalleryLargeImgMaster">
             <img
               id="picture-Box-ThreeDImages"
-              src="images/Pictures/3D/Images/Appartment_1.jpg"
-              alt="plain apartment 3D CG"
+              src="images/Pictures/3D/Images/Sci-Fi-Ground.jpg"
+              alt="sci fi desert cg"
               loading="lazy"
             />
             <div class="caption-container">
-              <p id="caption-ThreeDImages">Plain Apartment</p>
+              <p id="caption-ThreeDImages">Desert Mesa Terrain</p>
             </div>
           </div>
           <div class="rowThreeD">
+            <div class="photoGallerySmallImgThreeDMaster">
+              <img
+                class="photoGallerySmallImg"
+                src="images/Pictures/3D/Images/Sci-Fi-Ground.jpg"
+                onclick="myImageFunctionThreeDImages(this)"
+                alt="sci fi desert cg"
+                name="Desert Mesa Terrain"
+              />
+            </div>
             <div class="photoGallerySmallImgThreeDMaster">
               <img
                 class="photoGallerySmallImg"
@@ -454,19 +468,32 @@
           <div class="imageGalleryLargeImgMaster">
             <video
               id="picture-Box-ThreeDVideos"
-              poster="images/Pictures/3D/Videos/VideoPosters/Robot_Shopping-Poster.jpg"
-              src="images/Pictures/3D/Videos/Robot_Shopping.mp4"
-              alt="Robot Shopping"
+              poster="images/Pictures/3D/Videos/VideoPosters/Spaceship_And_Islands-Poster.jpg"
+              src="images/Pictures/3D/Videos/Spaceship_And_Islands.mp4"
               loading="lazy"
               controls
               loop
             ></video>
             <div class="caption-container">
-              <p id="caption-ThreeDVideos">Robots in Suppermarket</p>
+              <p id="caption-ThreeDVideos">Spaceship and Island Lair</p>
             </div>
           </div>
           <div class="rowVideo">
             <div class="photoGallerySmallVideoMaster">
+              <video
+                poster="images/Pictures/3D/Videos/VideoPosters/Spaceship_And_Islands-Poster.jpg"
+                class="photoGallerySmallVideo"
+                src="images/Pictures/3D/Videos/Spaceship_And_Islands.mp4"
+                onclick="myImageFunctionThreeDVideos(this)"
+                title="Spaceship and Island Lair"
+              ></video>
+              <video
+                poster="images/Pictures/3D/Videos/VideoPosters/Spaceship_Flyby_To_Planet-Poster.jpg"
+                class="photoGallerySmallVideo"
+                src="images/Pictures/3D/Videos/Spaceship_Flyby_To_Planet.mp4"
+                onclick="myImageFunctionThreeDVideos(this)"
+                title="Spaceship Flyby to Planet"
+              ></video>
               <video
                 poster="images/Pictures/3D/Videos/VideoPosters/Robot_Shopping-Poster.jpg"
                 class="photoGallerySmallVideo"
