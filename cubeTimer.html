@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="description"
+      content="A collection of all of Bub's best photos, 3D renders and music. Bub's Portfolio."
+    />
+    <meta
+      name="keywords"
+      content="Renders, Photography, Music, Skills, Portfolio"
+    />
+    <meta name="author" content="Bub" />
+    <link rel="icon" type="image/x-icon" href="images/Favicon/favicon.png" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="header.js"></script>
+    <link rel="stylesheet" href="cubeTimerStyle.css" />
+    <title>Cube Timer</title>
+  </head>
+  <body>
+    <header-bar></header-bar>
+    <div class="timerHeaderBackground"></div>
+    <div id="infoBubble">
+      <div id="infoText">
+        Bub enjoys solving speed cubes. Bub currently averages about 19 seconds
+        on 3x3, 5 seconds on 2x2, and 1.5 minutes on 4x4. To start this timer,
+        click and release any key. Click and release any key again to stop.
+      </div>
+      <button class="deleteInfobtn" onclick="deleteInfobtnfunc()">X</button>
+      <button class="showInfobtn" onclick="showInfobtn()">S</button>
+    </div>
+    <div id="js_timer">
+      <div id="timer">00:00</div>
+      <div class="times">
+        <p>Times:</p>
+        <button class="deleteAllTimesBtn" onclick="deleteAllTimes()">
+          Delete All
+        </button>
+        <div id="previousTimes"></div>
+      </div>
+    </div>
+  </body>
+  <script src="cubeTimer.js"></script>
+  <script>
+    function deleteInfobtnfunc() {
+      document.getElementById("infoText").style.display = "none";
+    }
+
+    function showInfobtn() {
+      document.getElementById("infoText").style.display = "flex";
+    }
+  </script>
+</html>

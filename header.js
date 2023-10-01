@@ -16,6 +16,7 @@ class Header extends HTMLElement {
         <a href="music.html">Music</a>
         <a href="coding.html">Coding</a>
         <a href="film.html">Film</a>
+        <a href="cubeTimer.html">Cube Timer</a>
       </div>
       <a class="headerBlockRightAbout" href="about.html">About</a>
       <div class="headerBlockRight">
@@ -27,6 +28,7 @@ class Header extends HTMLElement {
           <a href="music.html">Music</a>
           <a href="coding.html">Coding</a>
           <a href="film.html">Film</a>
+          <a href="cubeTimer.html">Cube Timer</a>
           <a href="about.html">About</a>
         </div>
       </div>
