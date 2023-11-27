@@ -96,11 +96,24 @@ body{
     display: block;
 }
 
-.headerBlockCenter{
-    margin: auto;
-    display: flex;
-    justify-content: space-evenly;
-    width: 40%;
+@media only screen and (min-width: 0px) {
+    .headerBlockCenter{
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+        width: 60%;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .headerBlockCenter{
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+        width: 40%;
+        font-size: 12px;
+    }
 }
 
 .headerBlockCenter a{
@@ -138,9 +151,20 @@ body{
     margin: 0;
 }
 
-.homeWelcomeDivLarge{
-    margin: 0;
-    margin-top: 20px;
+@media only screen and (min-width: 0px) {
+    .homeWelcomeDivLarge{
+        margin: 0;
+        margin-top: 20px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .homeWelcomeDivLarge{
+        margin: 0;
+        margin-top: 20px;
+        font-size: 30px;
+    }
 }
 
 .homeSkillBubbleMaster{
@@ -479,29 +503,33 @@ body{
     }
 }
 
-
-.filmsLinkContainer{
-    background-color: firebrick;
-    margin-top: 20%;
-    font-size: 24px;
-    border-radius: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    cursor: pointer;
-    transition: all, 0.3s;
+@media only screen and (min-width: 0px) {
+    .filmsLinkContainer{
+        background-color: firebrick;
+        margin-top: 40px;
+        font-size: 16px;
+        border-radius: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        cursor: pointer;
+        transition: all, 0.3s;
+    }
 }
 
-.filmsLinkContainer:hover {
-    background-color: purple;
-    margin-top: 20%;
-    font-size: 26px;
-    border-radius: 10px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
+@media only screen and (min-width: 600px) {
+    .filmsLinkContainer{
+        margin-top: 20%;
+        font-size: 24px;
+        border-radius: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        cursor: pointer;
+        transition: all, 0.3s;
+    }
 }
 
 .filmsLink{
