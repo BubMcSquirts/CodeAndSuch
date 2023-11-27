@@ -385,29 +385,50 @@ body{
 
 .AudioMaster{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    margin-top: 100px;
+    margin: auto;
+    margin-top: 20px;
+    width: 90%;
+    background-color: rgb(33, 33, 33);
+    border-radius: 5px;
+}
+
+.AudioMaster:hover{
+    background-color: rgba(100, 100, 100, 0.5);
+}
+.audioYear {
+    font-size: 8px;
 }
 
 .AudioPoster{
-    width: 40%;
+    width: 100px;
+    border-radius: 5px;
+    opacity: 0.8;
+    transition: all 0.3s;
+}
+
+.AudioPoster:hover{
+    opacity: 1;
 }
 
 .AudioBlock{
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 50%;
-    margin-top: 20px;
+    width: 90%;
     border-radius: 10px;
     transition: background-color 1s;
 }
 
+.audioTitles {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
 .AudioBlock p{
-    font-size: 12px;
-    margin: auto;
-    margin-left: 0;
+    font-size: 20px;
+    margin: 20px;
     width: 40%;
 }
 
@@ -460,7 +481,7 @@ body{
 
 
 .filmsLinkContainer{
-    background-color: blue;
+    background-color: firebrick;
     margin-top: 20%;
     font-size: 24px;
     border-radius: 10px;
