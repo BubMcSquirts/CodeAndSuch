@@ -1,7 +1,12 @@
 var timer;
 var clock = document.getElementById("timer");
 var previousTimes = document.getElementById("previousTimes");
-let [seconds, minutes] = [0, 0];
+var averageTimes = document.getElementById("averageTimes");
+var numberOfSolves = document.getElementById("numberOfSolves");
+var timesContainer = document.getElementById("previousTimes");
+const Times = [];
+
+let [milliseconds, seconds, minutes] = [0, 0, 0];
 
 function pause() {
   clearInterval(timer);
@@ -9,25 +14,19 @@ function pause() {
 }
 
 function presentTime() {
-  seconds++;
-  {
-    if (seconds == 60) {
-      seconds = 0;
-      minutes++;
-    }
+  milliseconds++;
+  if (milliseconds == 10) {
+    milliseconds = 0;
+    seconds++;
   }
-
-  let s = seconds < 10 ? "0" + seconds : seconds;
-  let m = minutes < 10 ? "0" + minutes : minutes;
-
-  clock.innerHTML = m + ":" + s;
+  clock.innerHTML = seconds + "." + milliseconds;
 }
 
 function go() {
   if (timer !== null) {
     clearInterval(timer);
   }
-  timer = setInterval(presentTime, 1000);
+  timer = setInterval(presentTime, 92.7);
 }
 
 var keyCounter = 0;
@@ -36,24 +35,31 @@ window.onload = function () {
     keyCounter++;
     clock.className = "going";
     if (keyCounter % 2 == 0) {
+      //Average:
+      Times.push(seconds, milliseconds);
+      clock.innerHTML = seconds + "." + milliseconds;
+      let total = 0;
+      Times.forEach((item) => {
+        total += item;
+      });
+      let average = total / Times.length / 2;
+      averageTimes.innerHTML = `Average:${average}`;
+      numberOfSolves.innerHTML = `Solves:${Times.length / 2}`;
+      //Above Average
       pause();
       clock.className = "stop";
     } else {
       go();
+      milliseconds = [0];
+      seconds = [0];
     }
   };
 };
 
 document.onkeydown = function () {
   clearInterval(timer);
-  [seconds, minutes] = [0, 0];
   clock.className = "start";
 };
-
-//Previous Times
-
-let addToDoButton = document.getElementById("tryThis");
-let toDoContainer = document.getElementById("previousTimes");
 
 function previousTimesCounter() {
   var paragraph = document.createElement("p");
@@ -62,15 +68,17 @@ function previousTimesCounter() {
       <button>X</button>
      <div>${clock.innerHTML}</div>
    </div>`;
-  toDoContainer.appendChild(paragraph);
+  timesContainer.appendChild(paragraph);
   paragraph.addEventListener("click", function () {
-    toDoContainer.removeChild(paragraph);
+    timesContainer.removeChild(paragraph);
   });
 }
 
 function deleteAllTimes() {
   if (confirm("Would you really like to delete all times in this session?")) {
     previousTimes.innerHTML = ``;
+    averageTimes.innerHTML = `Average:`;
+    numberOfSolves.innerHTML = `Solves:`;
   } else {
   }
 }

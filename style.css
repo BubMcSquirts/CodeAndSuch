@@ -21,6 +21,10 @@ body{
     margin-top: 50px;
 }
 
+.paragraphContainer a {
+    color: white;
+}
+
 .paragraphs{
     font-family: Roboto-Italic;
 }

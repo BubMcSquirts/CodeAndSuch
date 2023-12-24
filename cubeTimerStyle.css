@@ -1,9 +1,19 @@
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(fonts/roboto-font/RobotoRegular-3m4L.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Italic;
+    src: url(fonts/roboto-font/RobotoLightItalic-E9nn.ttf);
+}
+
 body{
     background-color: darkgrey;
     align-items: center;
     margin: 0;
     color: black;
-    font-family: rubik;
+    font-family: Roboto-Regular;
 }
 
 .timerHeaderBackground{
@@ -19,7 +29,7 @@ body{
 }
 
 #timer{
-    font-size: 150px;
+    font-size: 100px;
     margin-right: auto;
     margin-left: auto;
     margin-top: 200px;
@@ -57,7 +67,7 @@ body{
 }
 
 #previousTimes{
-    height: 550px;
+    height: 200px;
     overflow-y: scroll;
 }
 
