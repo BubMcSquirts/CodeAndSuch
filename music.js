@@ -1,18 +1,24 @@
 let musicInfo = [
   {
+    title: "Sick Day",
+    imgSrc: "images/Pictures/Music/Songs/Sick_Day/Sick_Day_Poster.jpg",
+    musicSrc: "images/Pictures/Music/Songs/Sick_Day/Sick_Day.mp3",
+    songLink: "",
+  },
+  {
     title: "Mist Of The Morning",
     imgSrc:
       "images/Pictures/Music/Songs/Morning_Songs/Morning Songs Poster.jpg",
     musicSrc:
       "images/Pictures/Music/Songs/Morning_Songs/Mist of the Morning.mp3",
-    songLink: "https://distrokid.com/hyperfollow/bubm/morning-songs",
+    songLink: "",
   },
   {
     title: "Wind Chimes",
     imgSrc:
       "images/Pictures/Music/Songs/Morning_Songs/Morning Songs Poster.jpg",
     musicSrc: "images/Pictures/Music/Songs/Morning_Songs/Wind Chimes.mp3",
-    songLink: "https://distrokid.com/hyperfollow/bubm/morning-songs",
+    songLink: "",
   },
   {
     title: "Song For The Breeze",
@@ -20,7 +26,7 @@ let musicInfo = [
       "images/Pictures/Music/Songs/Morning_Songs/Morning Songs Poster.jpg",
     musicSrc:
       "images/Pictures/Music/Songs/Morning_Songs/Song for the Breeze.mp3",
-    songLink: "https://distrokid.com/hyperfollow/bubm/morning-songs",
+    songLink: "",
   },
   {
     title: "Waking Of The Earth",
@@ -28,7 +34,7 @@ let musicInfo = [
       "images/Pictures/Music/Songs/Morning_Songs/Morning Songs Poster.jpg",
     musicSrc:
       "images/Pictures/Music/Songs/Morning_Songs/Waking Of The Earth.mp3",
-    songLink: "https://distrokid.com/hyperfollow/bubm/morning-songs",
+    songLink: "",
   },
   {
     title: "O Holy Night",
