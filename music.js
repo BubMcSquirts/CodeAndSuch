@@ -33,7 +33,7 @@ let musicInfo = [
     imgSrc:
       "images/Pictures/Music/Songs/Morning_Songs/Morning Songs Poster.jpg",
     musicSrc:
-      "images/Pictures/Music/Songs/Morning_Songs/Waking Of The Earth.mp3",
+      "images/Pictures/Music/Songs/Morning_Songs/Waking of the Earth.mp3",
     songLink: "",
   },
   {
