@@ -11,14 +11,14 @@ let musicInfo = [
       "images/Pictures/Music/Songs/Morning_Songs/Morning Songs Poster.jpg",
     musicSrc:
       "images/Pictures/Music/Songs/Morning_Songs/Mist of the Morning.mp3",
-    songLink: "",
+    songLink: "https://distrokid.com/hyperfollow/bubm/morning-songs-2",
   },
   {
     title: "Wind Chimes",
     imgSrc:
       "images/Pictures/Music/Songs/Morning_Songs/Morning Songs Poster.jpg",
     musicSrc: "images/Pictures/Music/Songs/Morning_Songs/Wind Chimes.mp3",
-    songLink: "",
+    songLink: "https://distrokid.com/hyperfollow/bubm/morning-songs-2",
   },
   {
     title: "Song For The Breeze",
@@ -26,7 +26,7 @@ let musicInfo = [
       "images/Pictures/Music/Songs/Morning_Songs/Morning Songs Poster.jpg",
     musicSrc:
       "images/Pictures/Music/Songs/Morning_Songs/Song for the Breeze.mp3",
-    songLink: "",
+    songLink: "https://distrokid.com/hyperfollow/bubm/morning-songs-2",
   },
   {
     title: "Waking Of The Earth",
@@ -34,7 +34,7 @@ let musicInfo = [
       "images/Pictures/Music/Songs/Morning_Songs/Morning Songs Poster.jpg",
     musicSrc:
       "images/Pictures/Music/Songs/Morning_Songs/Waking of the Earth.mp3",
-    songLink: "",
+    songLink: "https://distrokid.com/hyperfollow/bubm/morning-songs-2",
   },
   {
     title: "O Holy Night",
