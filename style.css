@@ -105,7 +105,7 @@ body{
         margin: auto;
         display: flex;
         justify-content: space-evenly;
-        width: 60%;
+        width: 80%;
         font-size: 12px;
     }
 }
@@ -115,7 +115,7 @@ body{
         margin: auto;
         display: flex;
         justify-content: space-evenly;
-        width: 40%;
+        width: 60%;
         font-size: 12px;
     }
 }
@@ -123,6 +123,13 @@ body{
 .headerBlockCenter a{
     color: white;
     text-decoration: none;
+    padding: 5px;
+    transition: all 0.3s;
+}
+
+.headerBlockCenter a:hover{
+    background-color: rgba(128, 128, 128, 0.8);
+    border-radius: 5px;
 }
 
 .homeImageTextMaster{
@@ -237,6 +244,7 @@ body{
 .pageTitleSubText{
     font-family: Roboto-Italic;
     font-size: 12px;
+    width: 90%;
 }
 
 /*Photo gallery 1 begin*/
@@ -545,3 +553,21 @@ body{
     color: white;
 }
 /*End Film CSS*/
+
+/*Begin Stop Motion CSS*/
+
+#jsImageGallery{
+}
+
+.twoDPictures,
+.stopMotionVideoContainer{
+    align-items: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.twoDPicture,
+.stopMotionVideo{
+    width: 80%;
+}

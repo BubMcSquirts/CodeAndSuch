@@ -11,8 +11,10 @@ class Header extends HTMLElement {
         <a href="index.html">Home</a>
       </div>
       <div class="headerBlockCenter">
-        <a href="3D.html">3D</a>
         <a href="music.html">Music</a>
+        <a href="3D.html">3D</a>
+        <a href="stopmotion.html">Stop Motion</a>
+        <a href="2D.html">2D</a>
         <a href="coding.html">Coding</a>
         <a href="film.html">Film</a>
         <a href="photos.html">Photos</a>
@@ -23,8 +25,10 @@ class Header extends HTMLElement {
         <img src="images/Icons/Menu_Logo_Icon.png" />
         <div class="menuDropdownMaster">
           <a href="index.html">Home</a>
-          <a href="3D.html">3D</a>
           <a href="music.html">Music</a>
+          <a href="3D.html">3D</a>
+          <a href="stopmotion.html">Stop Motion</a>
+          <a href="2D.html">2D</a>
           <a href="coding.html">Coding</a>
           <a href="film.html">Film</a>
           <a href="photos.html">Photos</a>

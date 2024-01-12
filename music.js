@@ -1,15 +1,9 @@
 let musicInfo = [
   {
     title: "Gentle Rise",
-    imgSrc: "  images/Pictures/Music/Songs/Gentle Rise/Gentle Rise.jpg",
+    imgSrc: "  images/Pictures/Music/Songs/Gentle Rise/Gentle Rise Poster.jpg",
     musicSrc: "images/Pictures/Music/Songs/Gentle Rise/Gentle Rise.mp3",
-    songLink: "",
-  },
-  {
-    title: "Sick Day",
-    imgSrc: "images/Pictures/Music/Songs/Sick_Day/Sick_Day_Poster.jpg",
-    musicSrc: "images/Pictures/Music/Songs/Sick_Day/Sick_Day.mp3",
-    songLink: "",
+    songLink: "https://distrokid.com/hyperfollow/bubm/gentle-rise",
   },
   {
     title: "Mist Of The Morning",
@@ -41,6 +35,12 @@ let musicInfo = [
     musicSrc:
       "images/Pictures/Music/Songs/Morning_Songs/Waking of the Earth.mp3",
     songLink: "https://distrokid.com/hyperfollow/bubm/morning-songs-2",
+  },
+  {
+    title: "Sick Day",
+    imgSrc: "images/Pictures/Music/Songs/Sick_Day/Sick_Day_Poster.jpg",
+    musicSrc: "images/Pictures/Music/Songs/Sick_Day/Sick_Day.mp3",
+    songLink: "",
   },
   {
     title: "O Holy Night",
