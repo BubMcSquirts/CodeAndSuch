@@ -1,5 +1,11 @@
 let musicInfo = [
   {
+    title: "Gentle Rise",
+    imgSrc: "  images/Pictures/Music/Songs/Gentle Rise/Gentle Rise.jpg",
+    musicSrc: "images/Pictures/Music/Songs/Gentle Rise/Gentle Rise.mp3",
+    songLink: "",
+  },
+  {
     title: "Sick Day",
     imgSrc: "images/Pictures/Music/Songs/Sick_Day/Sick_Day_Poster.jpg",
     musicSrc: "images/Pictures/Music/Songs/Sick_Day/Sick_Day.mp3",
