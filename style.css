@@ -27,6 +27,7 @@ body{
 
 .paragraphs{
     font-family: Roboto-Italic;
+    font-size: 24px;
 }
 
 .headerMaster{
@@ -237,7 +238,7 @@ body{
 }
 
 .pageTitle{
-    font-size: 16px;
+    font-size: 30px;
     margin-bottom: 0px;
 }
 
