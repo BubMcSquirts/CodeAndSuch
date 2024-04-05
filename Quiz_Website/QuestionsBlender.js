@@ -12,7 +12,7 @@ let options = [
     explanation: `The first open source Blender realease, 2.2, was released in 2003.`,
   },
   {
-    question: "What is are the hot keys for the Bool Tool addon?",
+    question: "What are the hot keys for the Bool Tool addon?",
     correct: "Ctrl Shift B",
     incorrect: "Alt Ctrl B",
     explanation: `The Bool Tool addon's shortcut is Ctrl Shift B.`,
