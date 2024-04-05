@@ -29,8 +29,8 @@ function explain() {
 }
 
 function masterFunc() {
-  switchIds();
   explain();
+  switchIds();
   question.innerHTML = `Q: ${options[x].question}`;
   questionNumberIndicator.innerHTML = `${x}/${options.length - 1}`;
   optionOne.className = "optionOne";
@@ -38,12 +38,12 @@ function masterFunc() {
 }
 
 function switchIds() {
-  if ((options[x].id * 7) % 3) {
+  if (options[x].explanation.length % 2) {
     let questionBox = document.getElementById("questionBox");
     questionBox.innerHTML = `
-          <div id="optionTwo">1. ${options[x].incorrect}</div>
-          <div id="optionOne">2. ${options[x].correct}</div>
-      `;
+            <div id="optionTwo">1. ${options[x].incorrect}</div>
+            <div id="optionOne">2. ${options[x].correct}</div>
+        `;
     let optionOne = document.getElementById("optionOne");
     optionOne.addEventListener("click", correct);
     let optionTwo = document.getElementById("optionTwo");
@@ -52,9 +52,9 @@ function switchIds() {
   } else {
     let questionBox = document.getElementById("questionBox");
     questionBox.innerHTML = `
-          <div id="optionOne">1. ${options[x].correct}</div>
-          <div id="optionTwo">2. ${options[x].incorrect}</div>
-      `;
+            <div id="optionOne">1. ${options[x].correct}</div>
+            <div id="optionTwo">2. ${options[x].incorrect}</div>
+        `;
     let optionOne = document.getElementById("optionOne");
     optionOne.addEventListener("click", correct);
     let optionTwo = document.getElementById("optionTwo");
