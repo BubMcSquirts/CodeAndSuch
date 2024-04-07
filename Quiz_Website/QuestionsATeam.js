@@ -73,7 +73,7 @@ let options = [
   },
   {
     question: "What other movie is Mr. T. most known for?",
-    correct: "Rocky II",
+    correct: "Rocky III",
     incorrect: "Independance Day",
     explanation: "Mr. T plays Rocky's nemisis in Rocky II.",
   },
