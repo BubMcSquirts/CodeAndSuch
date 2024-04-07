@@ -6,10 +6,9 @@ class Header extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <div class="headerMaster">
-      <div class="headerBlockLeft">
+      <a href="index.html" class="headerBlockLeft">
         <img src="images/Logo/LogoDonut.jpg" />
-        <a href="index.html">Home</a>
-      </div>
+      </a>
       <div class="headerBlockCenter">
         <a target ="_blank" href="Quiz_Website/indexQuiz.html">Quizzes</a>
         <a href="music.html">Music</a>
@@ -39,6 +38,12 @@ class Header extends HTMLElement {
         </div>
       </div>
     </div>
+    <style>
+    .headerMaster{
+      display: flex;
+      align-items: center;
+    }
+    </style>
         `;
   }
 }
