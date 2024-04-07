@@ -38,12 +38,6 @@ class Header extends HTMLElement {
         </div>
       </div>
     </div>
-    <style>
-    .headerMaster{
-      display: flex;
-      align-items: center;
-    }
-    </style>
         `;
   }
 }
