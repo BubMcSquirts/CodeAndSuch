@@ -1,7 +1,15 @@
 let musicInfo = [
   {
+    title: "Drifting by Andy McKee Live Performance",
+    imgSrc:
+      "images/Pictures/Music/Songs/Drifting_Live/2024_Drifting_Performance_Poster.jpg",
+    musicSrc:
+      "images/Pictures/Music/Songs/Drifting_Live/2024_Drifting_Performance_Audio.mp4",
+    songLink: "",
+  },
+  {
     title: "Gentle Rise",
-    imgSrc: "  images/Pictures/Music/Songs/Gentle Rise/Gentle Rise Poster.jpg",
+    imgSrc: "images/Pictures/Music/Songs/Gentle Rise/Gentle Rise Poster.jpg",
     musicSrc: "images/Pictures/Music/Songs/Gentle Rise/Gentle Rise.mp3",
     songLink: "https://distrokid.com/hyperfollow/bubm/gentle-rise",
   },
