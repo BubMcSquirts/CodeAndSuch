@@ -1,5 +1,12 @@
 let musicInfo = [
   {
+    title: "Falling Leaf",
+    imgSrc:
+      "images/Pictures/Music/Songs/Falling_Leaf/Falling_Leaf_Poster_LQ.jpg",
+    musicSrc: "images/Pictures/Music/Songs/Falling_Leaf/Falling_Leaf.mp3",
+    songLink: "",
+  },
+  {
     title: "Drifting by Andy McKee Live Performance",
     imgSrc:
       "images/Pictures/Music/Songs/Drifting_Live/2024_Drifting_Performance_Poster.jpg",
